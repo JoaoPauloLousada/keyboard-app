@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, { createGlobalStyle, css } from 'styled-components'
+import Keyboard from './components/keyboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Wrapper className="App">
+        <Keyboard />
+      </Wrapper>
+      <GlobalStyle/>
+    </>
   );
 }
 
 export default App;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background:#222;
+  margin: 0;
+  padding: 0;
+`
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing:border-box
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+`
