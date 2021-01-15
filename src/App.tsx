@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { createGlobalStyle, css } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import Keyboard from './components/keyboard';
 
 function App() {
