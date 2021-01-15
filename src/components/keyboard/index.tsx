@@ -28,7 +28,6 @@ const Keyboard = () => {
 export default Keyboard
 
 const Wrapper = styled.section`
-  /* width:34em; */
   width: 100%;
   max-width: 1080px;
   height:18.875em;
